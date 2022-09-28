@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bit.data.dao.ComBoardDao">
+    <!--<select id="getTotalCount" parameterType="Map" resultType="int">
+        select count(*) from board
+        <if test="searchcolumn!=null and searchword!=null">
+            where ${searchcolumn} like concat('%', #{searchword}, '%')
+        </if>
+    </select>-->
+    <insert id="insertBoard" parameterType="cbdto">
+        insert into board values (null, #{boardtype}, #{usernum}, #{userid}, #{subject}, #{content}, #{photo}, 0, 0, 0, now());
+    </insert>
+</mapper>

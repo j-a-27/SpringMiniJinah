@@ -9,7 +9,7 @@ import lombok.Data;
 @Setter
 @Getter
 @ToString
-@Data- 이거 하나로 setter & getter & tostring 3개 모두 적용
+@Data
 
 @NoArgsConstructor
 @AllArgsConstructor

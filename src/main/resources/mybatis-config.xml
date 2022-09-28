@@ -9,3 +9,9 @@
 		<typeAlias type="bit.data.dto.BoardAnswerDto" alias="badto"/>
 	</typeAliases>
 </configuration>
+
+<configuration>
+<typeAliases>
+	<typeAlias type="bit.data.dto.ComBoardDto" alias="cbdto"/>
+</typeAliases>
+</configuration>
